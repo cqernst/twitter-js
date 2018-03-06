@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const morgan = require('morgan');
+const nunjucks = require('nunjucks');
 
 app.listen(3000, () => {
 	console.log('server listening')
@@ -14,3 +16,5 @@ app.get('/', (res, req) => {
 })
 
 //what does res.json do?
+
+//req.params object that contains all of the keys that we've placed on our...?
